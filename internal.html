@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbf7ef">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TRS Operations">
+  <title>The Rise Suites Operations</title>
+  <link rel="manifest" href="./internal-manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <style>
+    :root{--gold:#b97812;--gold2:#d59b35;--cream:#fbf7ef;--ink:#241f19;--muted:#746d64;--line:#eadfce;--shadow:0 18px 46px rgba(70,45,15,.12)}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--cream)}
+    body{display:grid;place-items:center;padding:max(24px,env(safe-area-inset-top)) 16px max(24px,env(safe-area-inset-bottom))}
+    .shell{width:min(100%,520px);background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 22px;box-shadow:var(--shadow)}
+    .logo{display:block;width:210px;max-width:78%;height:auto;margin:0 auto 24px}.eyebrow{text-align:center;color:var(--gold);font-weight:750;letter-spacing:.15em;font-size:12px;text-transform:uppercase}
+    h1{text-align:center;font-family:Georgia,serif;font-size:30px;margin:10px 0 8px}.intro{text-align:center;color:var(--muted);line-height:1.55;margin:0 0 24px}
+    .grid{display:grid;gap:12px}.role{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff;transition:.15s transform,.15s box-shadow}
+    .role:active{transform:scale(.985)}.icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#fff;font-size:23px;flex:0 0 48px}
+    .role strong{display:block;font-size:16px}.role span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.arrow{margin-left:auto;color:var(--gold);font-size:22px}
+    .note{border-top:1px solid var(--line);margin-top:22px;padding-top:17px;color:var(--muted);font-size:12px;line-height:1.55;text-align:center}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <img class="logo" src="./logo.png" alt="The Rise Suites">
+    <div class="eyebrow">Internal Operations</div>
+    <h1>ระบบงานภายใน</h1>
+    <p class="intro">เลือกหน้าปฏิบัติงาน แล้วเข้าสู่ระบบด้วยบัญชีที่ได้รับมอบหมาย</p>
+    <nav class="grid" aria-label="ระบบงานภายใน">
+      <a class="role" href="https://script.google.com/macros/s/AKfycbzjDRj-qwqoBXqrOBbXMphiTlIiuS_3pxvqdhBq9yfr9k_NwxT9Wjg9Kz0Wj_Ln17JCyw/exec?view=admin"><span class="icon">⚙</span><span><strong>Admin Management</strong><span>จัดการเมนู บัญชี และรายงาน</span></span><span class="arrow">›</span></a>
+      <a class="role" href="https://script.google.com/macros/s/AKfycbzjDRj-qwqoBXqrOBbXMphiTlIiuS_3pxvqdhBq9yfr9k_NwxT9Wjg9Kz0Wj_Ln17JCyw/exec?view=staff"><span class="icon">✓</span><span><strong>Staff Orders</strong><span>รับออร์เดอร์ เสิร์ฟ และปิดบิล</span></span><span class="arrow">›</span></a>
+      <a class="role" href="https://script.google.com/macros/s/AKfycbzjDRj-qwqoBXqrOBbXMphiTlIiuS_3pxvqdhBq9yfr9k_NwxT9Wjg9Kz0Wj_Ln17JCyw/exec?view=kitchen"><span class="icon">♨</span><span><strong>Kitchen Queue</strong><span>เริ่มปรุงและแจ้งอาหารพร้อมเสิร์ฟ</span></span><span class="arrow">›</span></a>
+    </nav>
+    <p class="note">ติดตั้งบน iPhone/iPad: เปิดหน้านี้ใน Safari → แชร์ → เพิ่มไปยังหน้าจอโฮม</p>
+  </main>
+  <script>if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));</script>
+</body>
+</html>
